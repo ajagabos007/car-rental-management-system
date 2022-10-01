@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="keywords" content="#">
         <meta name="description" content="#">
-        <title>Kangyan Wing And Tour | Homepage</title>
+        <title>{{env('APP_NAME')}} | Homepage</title>
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon.ico">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/favicon.ico">
@@ -18,25 +18,25 @@
         <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.ico">
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
-        <link href="{{asset('kangyang/assets/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/bootstrap.min.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/font-awesome.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/font-awesome.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/font/flaticon.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/font/flaticon.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/slick.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/slick.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/ion.rangeSlider.min.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/ion.rangeSlider.min.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/datepicker.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/datepicker.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/magnific-popup.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/magnific-popup.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/nice-select.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/nice-select.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/style.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/style.css')}}" rel="stylesheet">
 
-        <link href="{{asset('kangyang/assets/css/responsive.css')}}" rel="stylesheet">
+        <link href="{{asset('auto_rental/assets/css/responsive.css')}}" rel="stylesheet">
         
         <!-- Fonts -->
          <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
@@ -49,7 +49,7 @@
           <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
         <!--[if lte IE 9]>
-                <link rel="stylesheet" type="text/css" href="{{asset('kangyang/css/ie.css')}}" />
+                <link rel="stylesheet" type="text/css" href="{{asset('auto_rental/css/ie.css')}}" />
             <![endif]-->
 
         <!--[if lt IE 9]>
@@ -75,28 +75,28 @@
 </div>
 
 
-<script src="{{asset('kangyang/assets/js/jquery.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/jquery.min.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/popper.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/popper.min.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/bootstrap.min.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/ion.rangeSlider.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/ion.rangeSlider.min.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/slick.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/slick.min.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/datepicker.js')}}"></script>
-<script src="{{asset('kangyang/assets/js/datepicker.en.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/datepicker.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/datepicker.en.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/isotope.pkgd.min.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/jquery.nice-select.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/jquery.nice-select.js')}}"></script>
 
-<script src="{{asset('kangyang/assets/js/jquery.magnific-popup.min.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/jquery.magnific-popup.min.js')}}"></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg"></script>
 
-<script src="{{asset('kangyang/assets/js/custom.js')}}"></script>
+<script src="{{asset('auto_rental/assets/js/custom.js')}}"></script>
 
 </body>
 
