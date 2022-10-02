@@ -54,17 +54,6 @@ use App\Http\Livewire\Service\Index as ServiceIndex;
 
 use App\Models\Car;
 
-
- /* php artisan migrate */
-//  \Artisan::call('migrate');
-
-// Create a symbolic link on live serv
-// use Illuminate\Support\Facades\File;
-
-// File::link(
-//     storage_path('app/public'), public_path('storage')
-// );
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -156,7 +145,6 @@ Route::name('payments.')->group(function(){
     });
 });
 
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
@@ -183,8 +171,6 @@ Route::middleware([
     });
 
 });
-
-
 
 Route::fallback(function () {
     return view('404');
