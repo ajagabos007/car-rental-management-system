@@ -35,11 +35,4 @@ class Index extends Component
     public function updatingSearch(){
         $this->resetPage();
     }
-    public function updated($name, $value)
-
-    {
-
-        //
-
-    }
 }

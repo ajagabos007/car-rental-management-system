@@ -474,7 +474,6 @@
            </div>
        </footer>
 
-
        <div class="copyright">
            <div class="container">
                <div class="row">
@@ -557,7 +556,6 @@
            }); 
            
        </script>
-       
 
    </body>
 </html>
