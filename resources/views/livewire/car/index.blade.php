@@ -70,20 +70,20 @@
 </div>
 <form wire:submit.prevent="search">
     <div class="form-group">
-        <label class="fs-14 text-custom-black fw-500">Search Car</label>
-        <input type="search" wire:model="data" name="#" class="form-control form-control-custom" placeholder="enter car name or price">
+        <label class="fs-14 text-custom-black fw-500">Search your favourite car</label>
+        <input type="search" wire:model="data"  name="#" class="form-control form-control-custom" placeholder="seach by name or price">
     </div>
     <button class="btn-first btn-submit full-width btn-height">Search Now</button>
 </form>
 </div>
     <div class="sidebar_widgets mb-xl-30">
         <div class="widget_title bg-custom-blue">
-            <h5 class="no-margin text-custom-white">Price</h5>
+            <h5 class="no-margin text-custom-white">Price NGN {{$min_price}} - {{$max_price}}</h5>
             </div>
             <div class="widget_range">
-                <div class="thc-range-inner">
-                    <input type="text" class="js-range-slider1" name="my_range" value="">
-                    <input type="range" name="range" id="">
+                <div class="thc-range-inner flex ">
+                    <input type="range" step="0.01" title="NGN {{$min_price}} " wire:model='min_price'  max="{{$slider_min_price}}" class="w-full h-3 bg-custom-blue appearance-none text-fuchsia-500 rounded-l cursor-pointer  dark:bg-gray-700">
+                    <input type="range" step="0.01"  title="NGN {{$max_price}} " wire:model='max_price'  min="{{$slider_min_price}}"  max="{{$slider_max_price}}" class="w-full h-3 bg-custom-blue appearance-none  text-fuchsia-500 rounded-r cursor-pointer  dark:bg-gray-700">
                 </div>
             </div>
         </div>
