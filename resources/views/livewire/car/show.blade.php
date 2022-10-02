@@ -22,13 +22,13 @@
 <div class="listing-details-inner bx-wrapper bg-custom-white padding-20">
 <div class="row">
 <div class="col-lg-8">
-<div class="detail-slider-for mb-xl-20 magnific-gallery">
-<div class="slide-item">
-    <a href="{{$car->image? Storage::url($car->image->url) : asset('kangyang/assets/images/cars/car_big.png')}}" class="popup">
-        <img src="{{$car->image? Storage::url($car->image->url): asset('kangyang/assets/images/cars/car_big.png')}}" class="image-fit" alt="img">
-    </a>
-</div>
-</div>
+    <div class="detail-slider-for mb-xl-20 magnific-gallery">
+        <div class="slide-item">
+            <a href="{{$car->image? Storage::url($car->image->url) : asset('kangyang/assets/images/cars/car_big.png')}}" class="popup">
+                <img src="{{$car->image? Storage::url($car->image->url): asset('kangyang/assets/images/cars/car_big.png')}}" class="image-fit" alt="img">
+            </a>
+        </div>
+    </div>
     <div class="title">
         <h4 class="fs-16">
             <i class="fas fa-car text-custom-blue"></i>
@@ -235,7 +235,7 @@
 <div class="hotel-grid-wrapper bx-wrapper">
 <div class="image-sec animate-img">
 <a href="#">
-<img src="{{asset('auto_rental/assets/images/cars/1.png')}}" class="full-width" alt="img">
+    <img src="{{asset('auto_rental/assets/images/cars/1.png')}}" class="full-width" alt="img">
 </a>
 </div>
 <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">

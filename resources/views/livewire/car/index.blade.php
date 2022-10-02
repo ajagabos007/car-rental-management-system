@@ -37,12 +37,12 @@
         <div class="hotel-grid mb-xl-30">
             <div class="hotel-grid-wrapper car-grid bx-wrapper">
                 <div class="image-sec animate-img">
-                    <a href="#">
+                    <a href="{{route('cars.show', $car)}}" >
                         <img src="{{Storage::url($car->image->url)}}" class="full-width" Style="height:210px;" alt="img">
                     </a>
                 </div>
                 <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
-                    <h4 class="title fs-16"><a href="#" class="text-custom-black">{{$car->name}}<small class="text-light-dark">1 Day</small></a></h4>
+                    <h4 class="title fs-16"><a href="{{route('cars.show', $car)}}" class="text-custom-black">{{$car->name}}<small class="text-light-dark">1 Day</small></a></h4>
                     <span class="price"><small>From</small>NGN {{$car->price}}</span>
                     <div class="action">
                         <a class="btn-second btn-small" href="{{route('cars.show', $car)}}">View</a>
@@ -83,6 +83,7 @@
             <div class="widget_range">
                 <div class="thc-range-inner">
                     <input type="text" class="js-range-slider1" name="my_range" value="">
+                    <input type="range" name="range" id="">
                 </div>
             </div>
         </div>
