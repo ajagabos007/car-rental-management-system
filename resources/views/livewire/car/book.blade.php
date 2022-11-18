@@ -40,9 +40,9 @@
                                                     <div class="image-sec animate-img mb-4">
                                                         <a href="#">
                                                             @if($car->image)
-                                                                <img src="{{Storage::url($car->image->url)}}" class="full-width" style="height:240px;" alt="img">
+                                                                <img src="{{$car->image->url}}" class="full-width" style="height:240px;" alt="img">
                                                                 @else
-                                                                <img src="http://127.0.0.1:8000/kangyang/assets/images/cars/1.jpg" class="full-width" alt="img">
+                                                                <img src="http://127.0.0.1:8000/auto_rental/assets/images/cars/1.jpg" class="full-width" alt="img">
                                                             @endif
                                                         </a>
                                                     </div>

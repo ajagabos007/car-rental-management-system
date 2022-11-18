@@ -45,7 +45,7 @@
            
             <div class="flex justify-center">
                 @if($car->image)
-                    <img src="{{Storage::url($car->image->url)}}" class="h-96 w-fit" alt="img">
+                    <img src="{{$car->image->url}}" class="h-96 w-fit" alt="img">
                 @endif 
             </div>
             <div class="bg-white p-4 rounded-lg shadow">

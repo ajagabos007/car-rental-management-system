@@ -24,8 +24,8 @@
 <div class="col-lg-8">
     <div class="detail-slider-for mb-xl-20 magnific-gallery">
         <div class="slide-item">
-            <a href="{{$car->image? Storage::url($car->image->url) : asset('kangyang/assets/images/cars/car_big.png')}}" class="popup">
-                <img src="{{$car->image? Storage::url($car->image->url): asset('kangyang/assets/images/cars/car_big.png')}}" class="image-fit" alt="img">
+            <a href="{{$car->image? $car->image->url : asset('auto_rental/assets/images/cars/car_big.png')}}" class="popup">
+                <img src="{{$car->image? $car->image->url: asset('auto_rental/assets/images/cars/car_big.png')}}" class="image-fit" alt="img">
             </a>
         </div>
     </div>
@@ -59,7 +59,7 @@
             <li class="text-light-dark"><label class="no-margin text-custom-blue">Car Type</label>{{$car->type->name}}</li>
             <li class="text-light-dark"><label class="no-margin text-custom-blue">Car Name</label>{{$car->name}}</li>
             <li class="text-light-dark"><label class="no-margin text-custom-blue">Passenger</label>{{$car->no_of_passenger}}</li>
-            <li class="text-light-dark"><label class="no-margin text-custom-blue">Baggage</label> {{$car->no_of_baggage}}</li>
+            <li class="text-light-dark"><label sclass="no-margin text-custom-blue">Baggage</label> {{$car->no_of_baggage}}</li>
             <li class="text-light-dark"><label class="no-margin text-custom-blue">Car Features</label>Available</li>
             <li class="text-light-dark"><label class="no-margin text-custom-blue">Total Price</label>NGN {{$car->price}}</li>
         </ul>

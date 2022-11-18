@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\CarType;
 use App\Models\Image;
 use Illuminate\Database\Eloquent\Factories\Sequence;
+use App\Http\Controllers\ImageController;
 
 class CarTypeSeeder extends Seeder
 {
@@ -38,12 +39,16 @@ class CarTypeSeeder extends Seeder
         $car_types->each(function($car_type, $key){
             $car_type->cars->each(function($car)use($key){
                 $image_file = new File(public_path('auto_rental/assets/images/cars/'. $key+1 .'.png'));
-                $url = Storage::putFile('public/images/cars', $image_file);
-                $image = new Image();
-                $image->url = $url;
-                $image->imageable_id = $car->id;
-                $image->imageable_type =$car::class;
-                $image->save();  
+                $image_controller = new ImageController();
+
+                $image_controller->storeImage($image_file, $path="auto-rental/images/cars/", $car->id, $car::class);
+
+                // $url = Storage::putFile('public/images/cars', $image_file);
+                // $image = new Image();
+                // $image->url = $url;
+                // $image->imageable_id = $car->id;
+                // $image->imageable_type =$car::class;
+                // $image->save();  
             });
         });
     }

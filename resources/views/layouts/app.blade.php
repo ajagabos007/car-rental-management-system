@@ -448,8 +448,8 @@
                            <ul class="custom instagram gallery-grid">
                                 @foreach (App\Models\Image::orderBy('created_at', 'desc')->take(6)->get() as $image)
                                <li>
-                                   <a href="{{Storage::url($image->url)}}" class="text-custom-white popup">
-                                       <img src="{{Storage::url($image->url)}}" class="image-fit" alt="img">    
+                                   <a href="{{$image->url}}" class="text-custom-white popup">
+                                       <img src="{{$image->url}}" class="image-fit" alt="img">    
                                    </a>
                                </li>
                                @endforeach

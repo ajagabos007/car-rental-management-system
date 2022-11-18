@@ -261,7 +261,7 @@
                                 <div class="hotel-grid-wrapper car-grid bx-wrapper">
                                     <div class="image-sec animate-img">
                                         <a href="{{route('cars.show', $recommendedCar)}}">
-                                            <img src="{{Storage::url($recommendedCar->image->url)}}" class="full-width" alt="img">
+                                            <img src="{{$recommendedCar->image->url}}" class="full-width" alt="img">
                                         </a>
                                     </div>
                                     <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">
@@ -313,7 +313,7 @@
                                 <div class="hotel-grid-wrapper car-grid bx-wrapper">
                                     <div class="image-sec animate-img">
                                         <a href="{{route('cars.show', $car)}}">
-                                            <img src="{{Storage::url($car->image->url)}}" class="full-width" alt="img">
+                                            <img src="{{$car->image->url}}" class="full-width" alt="img">
                                         </a>
                                     </div>
                                     <div class="hotel-grid-caption padding-20 bg-custom-white p-relative">

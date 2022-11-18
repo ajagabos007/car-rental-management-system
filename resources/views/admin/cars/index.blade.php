@@ -43,7 +43,7 @@
                         <td class="py-1 px-4 whitespace-nowrap">
                             <a href="{{route('admin.cars.show', $car)}}" class="flex -space-x-2 mr-2 text-blue-700 hover:underline ">
                                 @if($car->image)
-                                    <img src="{{Storage::url($car->image->url)}}" class="rounded-full w-6 h-6 border border-white mr-2" alt="img">
+                                    <img src="{{$car->image->url}}" class="rounded-full w-6 h-6 border border-white mr-2" alt="img">
                                 @endif
                                 {{$car->name}}
                             </a>  

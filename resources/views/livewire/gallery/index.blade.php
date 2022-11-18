@@ -34,8 +34,8 @@
                             @endphp
                             <div class="col-lg-4 col-md-6 filter-box {{$gallery_class}}">
                                 <div class="gallery-item mb-xl-30">
-                                    <a href="{{Storage::url($image->url)}}" class="popup">
-                                        <img src="{{Storage::url($image->url)}}" class="image-fit" style="height:250px;" alt="img">
+                                    <a href="{{$image->url}}" class="popup">
+                                        <img src="{{$image->url}}" class="image-fit" style="height:250px;" alt="img">
                                     </a>
                                 </div>
                             </div>

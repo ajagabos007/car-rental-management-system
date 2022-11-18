@@ -53,19 +53,19 @@ class ImageController extends Controller
         if(!$image)
             return;
 
-        // $cloudinary_image = $this->cloudinary->uploadApi()->upload(
-        //     $image->getRealPath(), 
-        //     $options = [
-        //         'public_id' =>  GeneratorService::randomAlphaNumeric(6).time(),
-        //         'folder' => $path,
-        //         'overwrite'=>true,
-        //     ]
-        // );
+        $cloudinary_image = $this->cloudinary->uploadApi()->upload(
+            $image->getRealPath(), 
+            $options = [
+                'public_id' =>  GeneratorService::randomAlphaNumeric(6).time(),
+                'folder' => $path,
+                'overwrite'=>true,
+            ]
+        );
 
-        $url = $image->store($folder);
+        // $url = $image->store($folder);
         $image = new Image();
-        $image->url = $url;
-        // $image->url = $cloudinary_image['secure_url'];
+        // $image->url = $url;
+        $image->url = $cloudinary_image['secure_url'];
         $image->imageable_id = $imageable_id;
         $image->imageable_type =$imageble_type;
         $image->save();

@@ -14,7 +14,7 @@
         @csrf
         <div class="flex justify-start">
             @if($car && $car->image)
-                <img src="{{Storage::url($car->image->url)}}" id="preview-image-before-upload" class="rounded h-36" alt="car image" srcset="" width="200" heights="200">
+                <img src="{{$car->image->url}}" id="preview-image-before-upload" class="rounded h-36" alt="car image" srcset="" width="200" heights="200">
             @else
                 <img src="{{asset('auto_rental/assets/images/car-rental-logo.jpg')}}" id="preview-image-before-upload" class="rounded h-36" alt="car image" srcset="" width="200" heights="200">
             @endif 
